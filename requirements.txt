@@ -2,3 +2,4 @@ fastapi
 Pillow
 uvicorn
 stability-sdk
+gunicorn

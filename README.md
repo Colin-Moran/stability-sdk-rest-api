@@ -23,4 +23,4 @@ At the top of the main.py file there is a block of code that you can uncomment i
 
 ## Deployment
 
-I have included a Dockerfile for easy deployment. 
+I have included a Procfile for easy deployment on Heroku. 
