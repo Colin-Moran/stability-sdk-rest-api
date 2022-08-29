@@ -1,7 +1,5 @@
 from asyncio.windows_events import NULL
-from random import seed
 from tkinter import Image
-from xmlrpc.client import ResponseError
 from fastapi import FastAPI, Body, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 from fastapi.responses import Response
