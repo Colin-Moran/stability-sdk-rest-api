@@ -1,4 +1,3 @@
-from tkinter import Image
 from fastapi import FastAPI, Body, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 from fastapi.responses import Response
@@ -9,6 +8,7 @@ from PIL import Image
 from stability_sdk import client
 import stability_sdk.interfaces.gooseai.generation.generation_pb2 as generation
 from pydantic import BaseModel, ValidationError
+from typing import Optional
 
 # Uncomment this section for a basic token authentication
 # api_keys = [ 
@@ -35,7 +35,7 @@ class ImageGenerationRequest(BaseModel):
     sampler="SAMPLER_K_LMS" # SAMPLER_DDIM, SAMPLER_DDPM, SAMPLER_K_EULER, SAMPLER_K_EULER_ANCESTRAL, SAMPLER_K_HEUN, SAMPLER_K_DPM_2, SAMPLER_K_DPM_2_ANCESTRAL, SAMPLER_K_LMS
     steps=50
     num_samples=1
-    seed=NULL # Integer value
+    seed: Optional[int] = None # Integer value # Integer value
     safety=False
     
 stability_api = client.StabilityInference(
