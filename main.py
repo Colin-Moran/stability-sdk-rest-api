@@ -57,7 +57,7 @@ async def generate(req: ImageGenerationRequest):
 
 def getImage(params: ImageGenerationRequest):
     
-    seed = NULL
+    seed = None
     if (params.seed):
         seed = [int(x) for x in str(params.seed)]
     
