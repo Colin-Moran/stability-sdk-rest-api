@@ -6,9 +6,9 @@ This is a simple REST API for AI image generation using the Stable Diffusion mod
 `pip install -r requirements.txt`
 
 ## Usage
-Open the main.py file in the app directory and set the `dreamStudioAPIKey` variable to your API key.
+Open the main.py file and set the `dreamStudioAPIKey` variable to your API key.
 
-Start the server: `uvicorn app.main:app --host 0.0.0.0 --port 5000 --reload`
+Start the server: `uvicorn main:app --host 0.0.0.0 --port 5000 --reload`
 
 If everything goes as planned you will see an output in the console similar to this:
 
@@ -23,4 +23,4 @@ At the top of the main.py file there is a block of code that you can uncomment i
 
 ## Deployment
 
-I have included a Procfile for easy deployment on Heroku. 
+I have included a Procfile for easy deployment on Heroku.
