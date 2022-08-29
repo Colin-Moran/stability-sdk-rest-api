@@ -1,0 +1,5 @@
+fastapi
+Pillow
+uvicorn
+stability-sdk
+ipython
