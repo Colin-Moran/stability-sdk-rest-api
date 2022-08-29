@@ -71,7 +71,7 @@ def getImage(params: ImageGenerationRequest):
         seed=seed
     )
     
-    image = NULL
+    image = None
     
     for resp in answers:
         for artifact in resp.artifacts:
